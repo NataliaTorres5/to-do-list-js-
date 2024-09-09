@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ffff;
+  padding: 1rem;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+main
+ {
+  width: 100%;
+font-family: poppins;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: .5rem;
+  background-color: #c2c2f5;
+}
+.logo-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-box>img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: 0 10px;
+}
+.info-p{
+    font-size: 20px;
+}
+ul{
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.svg{
+    color: white;
+    margin-right: 4px;
+}
+li{
+  list-style: none;  
+}
+.filter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.barSearch{
+    padding: 10px 60px 10px 60px!important;
+}
+
+input[type='text']{
+  padding: 10px;
+  margin: 5px 0 5px 0 ;
+  border: none;
+  border-radius: 10px;
+  font-family: poppins;
+
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffaf2;
+  padding: 50px;
+
+  flex-grow: 5;
+  gap: .5rem;
+}
+
+form, .note{
+  width: 100%;
+  height: fit-content;
+
+  background-color: #f8d3d3;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 0.5rem;
+  border-radius: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.input-box{
+    margin-bottom: 1rem;
+}
+.btn-box{
+  display: flex;
+  justify-content: space-around;
+}
+.btn{
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.notes-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.btns{
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.btn-x{
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+}
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  text-align: center;
+  background-color: #ffbcb6;
+  width: 100%;
+  height: 5rem;
+  font-family: poppins;
+  border-radius: 5px;
+}
+
+
+@media (min-width:350px) {
+  form, .note{
+    width: 250px;
+  }
+}
+@media (min-width:550px) {
+  .notes-box{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
